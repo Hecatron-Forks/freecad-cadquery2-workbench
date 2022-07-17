@@ -7,9 +7,9 @@ CadQuery 2.x Workbench for FreeCAD
 
 This is a FreeCAD Workbench to render CadQuery 2.x script in FreeCAD.
 
-<img src="docs/screenshot1.png" alt="Screenshot" width="70%" /><br/>
+<img src="docs/images/screenshot1.png" alt="Screenshot" width="70%" /><br/>
 
-<img src="docs/screenshot2.png" alt="Screenshot" width="70%" />
+<img src="docs/images/screenshot2.png" alt="Screenshot" width="70%" />
 
 ## Notable features
 * Dedicated CadQuery Python scripting editor
@@ -86,7 +86,7 @@ To Show/Hide the Editor, use the standard FreeCAD `View`->`Panels` from the menu
 
 
 #### Commands
-<img src="docs/toolbar.png" alt="ToolBar" width=50%/>
+<img src="docs/images/toolbar.png" alt="ToolBar" width=50%/>
 
 * File Management
   * `New Scirpt (Alt+Shift+N)` Start a new script from a template file
@@ -106,7 +106,7 @@ To Show/Hide the Editor, use the standard FreeCAD `View`->`Panels` from the menu
 
 
 #### User Settings
-<img src="docs/settings.png" alt="Settings" width=35%/><br/>
+<img src="docs/images/settings.png" alt="Settings" width=35%/><br/>
 
 * `Key-binding` you can set your own shortcuts to **Execute**, **Validate** or **Rebuild** commands.
 * `Execute on Save` Automatically Rebuild a script every time you save it. The default is **False**.
@@ -146,7 +146,7 @@ debug(highlight)
 ```
 Objects displayed with `debug()` are colored in red and have their alpha set so they are semi-transparent. This can be useful for checking for interference, clearance, or whether the expected face is being selected, as in the code above.
 Optional `name` and `group` can be provided.
-You have to toggle on the `Toggle Debug Script` <img src="docs/toggle_debug.svg" alt="Toggle Button" width=2%/> tool button in CadQuery Editor to display `debug()` objects.
+You have to toggle on the `Toggle Debug Script` <img src="docs/images/toggle_debug.svg" alt="Toggle Button" width=2%/> tool button in CadQuery Editor to display `debug()` objects.
 
 #### Script variables
 This workbench uses the following rules to find input variables for a script:
@@ -173,7 +173,7 @@ size = cqvar(10, 'Cube Size')       # set variable value and his description
 thickness = 1.25                    # Another way to setup a variable and his description
 describe_parameter(thickness,'Walls Thickness')
 ```
-<img src="docs/cq_variables_editor.png" alt="Variables Editor" width=50%/> Change values then press `Enter` to update your model.
+<img src="docs/images/cq_variables_editor.png" alt="Variables Editor" width=50%/> Change values then press `Enter` to update your model.
 
 ## License
 
