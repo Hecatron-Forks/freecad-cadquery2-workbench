@@ -25,7 +25,7 @@ class Script_Commands(QObject):
         QObject.__init__(self, parent)
         self.parent = parent
         self.file_contents = None
-        self.previous_path = os.environ['HOME']
+        self.previous_path = os.path.expanduser('~')
         
         # QTimer to check if file was modified on the disk
         self.fiName = None
@@ -506,7 +506,7 @@ class Script_Commands(QObject):
         # Use a temporary BREP file to get the cadquery shape
         # Use FreeCAD Home directory
         env = os.environ
-        temppath = env['FREECAD_USER_HOME'] if 'FREECAD_USER_HOME' in env else env['HOME']
+        temppath = env['FREECAD_USER_HOME'] if 'FREECAD_USER_HOME' in env else os.path.expanduser('~')
         temppath += '/.FreeCAD/tmp'
         
         # if not exist create the tmp directory
